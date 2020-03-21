@@ -1,4 +1,4 @@
-# Instalare Magento folosind Docker
+# Instalare Magento 2 folosind Docker
 
 Demonstratia a fost realizata pe o masina virtuala cu 4gb RAM si 2 CPU pe sistemul de operare Ubuntu 18.04
 
