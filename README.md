@@ -2,7 +2,7 @@
 
 Demonstratia a fost realizata pe o masina virtuala cu 4gb RAM si 2 CPU pe sistemul de operare Ubuntu 18.04
 
-## 1. Instalare docker si docker-compose
+## Instalare docker si docker-compose
 
 ```
 sudo apt update
