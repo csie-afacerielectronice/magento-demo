@@ -1,16 +1,23 @@
 # Instalare Magento 2 folosind Docker
 
-Demonstratia a fost realizata pe o masina virtuala cu 4gb RAM si 2 CPU pe sistemul de operare Ubuntu 18.04
+Demonstratia a fost realizata pe o masina virtuala cu 8gb RAM si 4 CPU pe sistemul de operare Ubuntu 18.04
 
 ## Instalare docker si docker-compose
 
 ```
-sudo apt update
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-sudo apt update
-sudo apt install docker-ce
+sudo apt-get update
+
+sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-releas
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu
+$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
 docker --version
 ```
 
