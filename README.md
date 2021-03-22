@@ -22,8 +22,10 @@ docker --version
 ```
 
 ```
-sudo curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
 sudo chmod +x /usr/local/bin/docker-compose
+
 docker-compose --version
 ```
 
@@ -31,10 +33,15 @@ docker-compose --version
 
 ```
 mkdir magento
+
 cd magento
+
 curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-magento/master/docker-compose.yml > docker-compose.yml
+
 mkdir ./mariadb_data ./magento_data ./elasticsearch_data
+
 chmod -R 777 ./mariadb_data ./magento_data ./elasticsearch_data
+
 sudo sysctl -w vm.max_map_count=262144
 ```
 
