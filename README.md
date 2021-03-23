@@ -1,8 +1,8 @@
 # Instalare Magento 2 folosind Docker
 
-Demonstratia a fost realizata pe o masina virtuala cu 8gb RAM si 4 CPU pe sistemul de operare Ubuntu 18.04
+Demonstratia a fost realizata pe o masina virtuala cu 8gb RAM si 4 CPU pe sistemul de operare Ubuntu 20.04
 
-## Instalare docker si docker-compose
+## Instalare docker
 
 ```
 sudo apt-get update
@@ -21,6 +21,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 docker --version
 ```
+
+## Instalare docker-compose
 
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -62,9 +64,13 @@ user:bitnami1
 
 # Referinte
 
+https://docs.docker.com/engine/install/ubuntu/
+
+https://docs.docker.com/compose/install/
+
 https://hub.docker.com/r/bitnami/magento/
 
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 
-https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
 
