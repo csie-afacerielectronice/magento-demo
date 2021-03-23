@@ -59,7 +59,9 @@ In cazul in intampinati dificultati cu setarea MAGENTO_HOST urmariti instructiun
 ## Credentialele pentru sectiunea de admin
 
 ```
-user:bitnami1
+user: user
+
+parola: bitnami1
 ```
 
 # Referinte
